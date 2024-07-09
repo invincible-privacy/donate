@@ -8,99 +8,109 @@
 
 </head>
 <body>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <button id="pool-button" class="pool-button">Pool</button>
-            <button id="projects-button" class="projects-button">Projects</button>
-        </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="pool-button" class="pool-button">Pool</button>
+      <button id="projects-button" class="projects-button">Projects</button>
     </div>
+  </div>
 
-    <main id="main-content">
-        <div id="qr-code-section" class="qr-code-container">
-            <img src="https://i.imgur.com/eM7pf8L.png" alt="QR code" class="qr-code-image">
-            <p class="qr-code-text">sp1qqg9l2uyf407a4j67py53qglqvgmjvue9kvzga6rmr5ywn4vsl04qsqc9wjz097uwgqgqamuvzs64qcsdgsf9zlvn3dktgeyaselad0v2nygndpw5</p>
-        </div>
-        <div id="projects-section" class="projects-container" style="display: none;">
-            <div class="project">
-                <img src="https://i.imgur.com/YNYKVUc.png" alt="Android wallet image" class="project-image">
-                <h2>Android wallet (mercury layer)</h2>
-                <p>Develop an Android wallet for mercury layer with advanced coin selection</p>
-                <button class="donate-button">Donate</button>
-                <a href="mailto:invincibleprivacy@protonmail.com" target="_blank"><button class="claim-button">Claim</button></a>                
-            </div>
-            <div class="project">
-                <h2>Coinswap (mercury layer)</h2>
-                <p>Proof of Concept for swapping statecoins using nostr encrypted messages</p>
-                <button class="donate-button">Donate</button>
-                <a href="mailto:invincibleprivacy@protonmail.com" target="_blank"><button class="claim-button">Claim</button></a>
-            </div>
-            <div class="project">
-                <img src="https://hivetalk.org/images/logo.svg" alt="hivetalk image" class="project-image">
-                <h2>Hivetalk</h2>
-                <p>Browser based Real-time video calls</p>
-                <a href="https://hivetalk.org/donate" target="_blank"><button class="donate-button">Donate</button></a>
-            </div>
-            <div class="project">
-                <h2>Jon Atack</h2>
-                <p>Review bitcoin core pull requests related to privacy</p>
-                <a href="https://jonatack.github.io/donate" target="_blank"><button class="donate-button">Donate</button></a>
-            </div>
-            <div class="project">
-                <img src="https://i.imgur.com/BQtavBF.jpeg" alt="Joinmarket maintainers image" class="project-image">
-                <h2>Maintainers (joinmarket)</h2>
-                <p>Support the maintainers of Joinmarket, a decentralized coinjoin implementation.</p>
-                <a href="https://github.com/AdamISZ/" target="_blank"><button class="donate-button">Donate</button></a>
-            </div>
-            <div class="project">
-                <img src="https://i.imgur.com/bFcagI3.png" alt="Orion explorer image" class="project-image">
-                <h2>Orion explorer</h2>
-                <p>An <a href="https://github.com/coinables/orion" target="_blank">explorer</a> focused on privacy</p>
-                <a href="https://x.com/coinableS" target="_blank"><button class="donate-button">Donate</button></a>                
-            </div>
-            <div class="project">
-                <h2>Rolling coinjoin</h2>
-                <p>Build a proof of concept for rolling coinjoin using OP_CHECKTEMPLATEVERIFY</p>
-                <button class="donate-button">Donate</button>
-                <a href="mailto:invincibleprivacy@protonmail.com" target="_blank"><button class="claim-button">Claim</button></a>
-            </div>
-            <div class="project">
-                <h2>Unify</h2>
-                <p>Payjoin over nostr</p>
-                <a href="https://github.com/Fonta1n3/Unify-Wallet" target="_blank"><button class="donate-button">Donate</button></a> 
-            </div>
-            <div class="project">
-                <img src="https://i.imgur.com/swaonYP.png" alt="Joinstr web app image" class="project-image">
-                <h2>Web App (joinstr)</h2>
-                <p>Improve the existing web app that follows joinstr protocol</p>
-                <button class="donate-button">Donate</button>
-                <a href="mailto:invincibleprivacy@protonmail.com" target="_blank"><button class="claim-button">Claim</button></a>
-            </div>
-        </div>
-    </main>
+  <main id="main-content">
+    <div id="qr-code-section" class="qr-code-container">
+      <img id="qr-code-image" src="https://i.imgur.com/eM7pf8L.png" alt="QR code" class="qr-code-image">
+      <p id="qr-code-text" class="qr-code-text">sp1qqg9l2uyf407a4j67py53qglqvgmjvue9kvzga6rmr5ywn4vsl04qsqc9wjz097uwgqgqamuvzs64qcsdgsf9zlvn3dktgeyaselad0v2nygndpw5</p>
+    </div>
+    <div id="projects-section" class="projects-container" style="display: none;">
+      <div class="project">
+        <img src="https://i.imgur.com/YNYKVUc.png" alt="Android wallet image" class="project-image">
+        <h2>Android wallet (mercury layer)</h2>
+        <p>Develop an Android wallet for mercury layer with advanced coin selection</p>
+        <button class="donate-button">Donate</button>
+        <a href="mailto:invincibleprivacy@protonmail.com" target="_blank"><button class="claim-button">Claim</button></a>
+      </div>
+      <div class="project">
+        <h2>Coinswap (mercury layer)</h2>
+        <p>Proof of Concept for swapping statecoins using nostr encrypted messages</p>
+        <button class="donate-button">Donate</button>
+        <a href="mailto:invincibleprivacy@protonmail.com" target="_blank"><button class="claim-button">Claim</button></a>
+      </div>
+      <div class="project">
+        <img src="https://hivetalk.org/images/logo.svg" alt="hivetalk image" class="project-image">
+        <h2>Hivetalk</h2>
+        <p>Browser based Real-time video calls</p>
+        <a href="https://hivetalk.org/donate" target="_blank"><button class="donate-button">Donate</button></a>
+      </div>
+      <div class="project">
+        <h2>Jon Atack</h2>
+        <p>Review bitcoin core pull requests related to privacy</p>
+        <a href="https://jonatack.github.io/donate" target="_blank"><button class="donate-button">Donate</button></a>
+      </div>
+      <div class="project">
+        <img src="https://i.imgur.com/BQtavBF.jpeg" alt="Joinmarket maintainers image" class="project-image">
+        <h2>Maintainers (joinmarket)</h2>
+        <p>Support the maintainers of Joinmarket, a decentralized coinjoin implementation.</p>
+        <a href="https://github.com/AdamISZ/" target="_blank"><button class="donate-button">Donate</button></a>
+      </div>
+      <div class="project">
+        <img src="https://i.imgur.com/bFcagI3.png" alt="Orion explorer image" class="project-image">
+        <h2>Orion explorer</h2>
+        <p>An <a href="https://github.com/coinables/orion" target="_blank">explorer</a> focused on privacy</p>
+        <a href="https://x.com/coinableS" target="_blank"><button class="donate-button">Donate</button></a>                
+      </div>
+      <div class="project">
+        <h2>Rolling coinjoin</h2>
+        <p>Build a proof of concept for rolling coinjoin using OP_CHECKTEMPLATEVERIFY</p>
+        <button class="donate-button">Donate</button>
+        <a href="mailto:invincibleprivacy@protonmail.com" target="_blank"><button class="claim-button">Claim</button></a>
+      </div>
+      <div class="project">
+        <h2>Unify</h2>
+        <p>Payjoin over nostr</p>
+        <a href="https://github.com/Fonta1n3/Unify-Wallet" target="_blank"><button class="donate-button">Donate</button></a> 
+      </div>
+      <div class="project">
+        <img src="https://i.imgur.com/swaonYP.png" alt="Joinstr web app image" class="project-image">
+        <h2>Web App (joinstr)</h2>
+        <p>Improve the existing web app that follows joinstr protocol</p>
+        <button class="donate-button">Donate</button>
+        <a href="mailto:invincibleprivacy@protonmail.com" target="_blank"><button class="claim-button">Claim</button></a>
+      </div>
+    </div>
+  </main>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-    var modal = document.getElementById("modal");
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var modal = document.getElementById("modal");
 
-    var poolButton = document.getElementById("pool-button");
-    var projectsButton = document.getElementById("projects-button");
+      var poolButton = document.getElementById("pool-button");
+      var projectsButton = document.getElementById("projects-button");
 
-    var qrCodeSection = document.getElementById("qr-code-section");
-    var projectsSection = document.getElementById("projects-section");
+      var qrCodeSection = document.getElementById("qr-code-section");
+      var projectsSection = document.getElementById("projects-section");
 
-    poolButton.onclick = function() {
+      poolButton.onclick = function() {
         qrCodeSection.style.display = "block";
         projectsSection.style.display = "none";
         modal.style.display = "none";
-    }
+      }
 
-    projectsButton.onclick = function() {
+      projectsButton.onclick = function() {
         qrCodeSection.style.display = "none";
         projectsSection.style.display = "block";
         modal.style.display = "none";
-    }
-});
+      }
+
+      var donateButtons = document.querySelectorAll('.donate-button');
+      donateButtons.forEach(function(button) {
+        if (!button.closest('a')) {
+          button.onclick = function() {
+            qrCodeSection.style.display = "block";
+            projectsSection.style.display = "none";
+            modal.style.display = "none";
+          }
+        }
+      });
+    });
   </script>
 </body>
-
 </html>
