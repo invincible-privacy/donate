@@ -88,6 +88,7 @@ footer {
 .qr-code-container {
     text-align: center;
     margin-bottom: 20px;
+    padding: 0 10px;
 }
 
 .qr-code-image {
@@ -98,6 +99,8 @@ footer {
 .qr-code-text {
     font-size: 0.75em;
     word-wrap: break-word;
+    word-break: break-all;
+    user-select: all;
 }
 
 .modal {
