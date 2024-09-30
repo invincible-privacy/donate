@@ -101,6 +101,12 @@ footer {
     cursor: not-allowed;
   }
   
-.donate-button.disabled:hover {
+  .donate-button.disabled:hover {
     background-color: #cccccc;
+  }
+
+  .donate-button.disabled::after {
+    content: " ?";
+    font-weight: bold;
+    margin-left: 5px;
   }
