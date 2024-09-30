@@ -68,15 +68,23 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var donateButtons = document.querySelectorAll('.donate-button');
-      donateButtons.forEach(function(button) {
-        if (!button.closest('a')) {
-          button.onclick = function() {
-            alert('Donation functionality to be implemented');
-          }
-        }
-      });
-    });
+  var projects = document.querySelectorAll('.project');
+  
+  projects.forEach(function(project) {
+    var donateButton = project.querySelector('.donate-button');
+    var claimButton = project.querySelector('.claim-button');
+    
+    if (claimButton) {
+      // Project is not claimed yet
+      donateButton.disabled = true;
+      donateButton.classList.add('disabled');
+      
+      donateButton.onclick = function() {
+        alert('This project is not claimed yet. Please send an email to invincibleprivacy@protonmail.com if you are interested to work on it.');
+      };
+    }
+  });
+});
   </script>
 </body>
 </html>
