@@ -1,26 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Invincible Privacy Group</title>
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="./style.css">
-
+  <title>Invincible Privacy Group - Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <button id="pool-button" class="pool-button">Pool</button>
-      <button id="projects-button" class="projects-button">Projects</button>
-    </div>
-  </div>
-
   <main id="main-content">
-    <div id="qr-code-section" class="qr-code-container">
-      <img id="qr-code-image" src="https://i.imgur.com/eM7pf8L.png" alt="QR code" class="qr-code-image">
-      <p id="qr-code-text" class="qr-code-text">sp1qqg9l2uyf407a4j67py53qglqvgmjvue9kvzga6rmr5ywn4vsl04qsqc9wjz097uwgqgqamuvzs64qcsdgsf9zlvn3dktgeyaselad0v2nygndpw5</p>
-    </div>
-    <div id="projects-section" class="projects-container" style="display: none;">
+    <div id="projects-section" class="projects-container">
       <div class="project">
         <img src="https://i.imgur.com/YNYKVUc.png" alt="Android wallet image" class="project-image">
         <h2>Android wallet (mercury layer)</h2>
@@ -80,33 +68,11 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var modal = document.getElementById("modal");
-
-      var poolButton = document.getElementById("pool-button");
-      var projectsButton = document.getElementById("projects-button");
-
-      var qrCodeSection = document.getElementById("qr-code-section");
-      var projectsSection = document.getElementById("projects-section");
-
-      poolButton.onclick = function() {
-        qrCodeSection.style.display = "block";
-        projectsSection.style.display = "none";
-        modal.style.display = "none";
-      }
-
-      projectsButton.onclick = function() {
-        qrCodeSection.style.display = "none";
-        projectsSection.style.display = "block";
-        modal.style.display = "none";
-      }
-
       var donateButtons = document.querySelectorAll('.donate-button');
       donateButtons.forEach(function(button) {
         if (!button.closest('a')) {
           button.onclick = function() {
-            qrCodeSection.style.display = "block";
-            projectsSection.style.display = "none";
-            modal.style.display = "none";
+            alert('Donation functionality to be implemented');
           }
         }
       });
